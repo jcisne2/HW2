@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1497a0;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: grey;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 500px;
+    width: 500px;
+    margin-bottom: 10px;
+    background-image: url("https://byzantion.mypinata.cloud/ipfs/QmYCnfeseno5cLpC75rmy6LQhsNYQCJabiuwqNUXMaA3Fo/1134.png?img-width=1000&img-height=1000&img-fit=contain&img-quality=85&img-format=webp");
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+   
+}
+
+.box img {
+  height: 400px;
+  width: 400px;
+  border: 5px solid grey;
+  padding: 5px;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.about-me {
+    margin: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.about-me img {
+    max-height: 200px;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.work {
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 50px;
+    height: 600px;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: grey;
+}
+
+
+.work h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align:left
+}
+
+
+
+.contact-me {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.contact-me nav ul {
+    list-style-type: none;
+}
+
+.resume {
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+      width: 50%;
+      flex-direction: column;
+    }
+    
+    header {
+      background: green;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    header {
+      background: yellow;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .content {
+        width: 100%;
+        flex-direction: column;
+      }
+      
+      header {
+        background: orange;
+      }
+    }
+
+  @media screen and (max-width: 992px) {
+    .hero {
+      width: 50%;
+      flex-direction: column;
+    }
+    
+    header {
+      background: green;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .hero {
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    header {
+      background: yellow;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .hero {
+        width: 100%;
+        flex-direction: column;
+      }
+      
+      header {
+        background: orange;
+      }
+    }
